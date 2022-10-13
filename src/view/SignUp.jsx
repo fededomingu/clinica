@@ -1,9 +1,9 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import React from 'react';
-import { Formulario, Title, Wrapper } from '../styles/SingUp';
+import { Formulario, Title, Wrapper } from '../styles/SignUp';
 
-const SingUp = () => {
+const SignUp = () => {
     const formik = useFormik({
         initialValues: {
             name: "",
@@ -47,4 +47,4 @@ const SingUp = () => {
   )
 }
 
-export default SingUp
+export default SignUp
