@@ -57,11 +57,12 @@ const SignUp = () => {
 
   return (
     <div>
-      <Formulario>
+      
       
         <Title>
-          Hola
+          REGISTRO
         </Title>
+        <Formulario>
         <Form noValidate onSubmit={formik.handleSubmit}>
           <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationFormik01">
@@ -75,22 +76,19 @@ const SignUp = () => {
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="4" controlId="validationFormik02">
-              <Form.Label>Last name</Form.Label>
+              <Form.Label>Apellido</Form.Label>
               <Form.Control
                 type="text"
                 name="lastName"
                 value={formik.values.lastName}
                 onChange={formik.handleChange}
               />
-
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="4" controlId="validationFormikemail">
-              <Form.Label>e-mail</Form.Label>
+              <Form.Label>Documento</Form.Label>
               <InputGroup hasValidation>
                 <Form.Control
-                  type="text"
-                  aria-describedby="inputGroupPrepend"
+                  type="number"
                   name="dni"
                   value={formik.values.dni}
                   onChange={formik.handleChange}
@@ -100,7 +98,7 @@ const SignUp = () => {
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} md="6" controlId="validationFormik03">
-              <Form.Label>City</Form.Label>
+              <Form.Label>Domicilio</Form.Label>
               <Form.Control
                 type="text"
                 name="domicilio"
@@ -109,42 +107,38 @@ const SignUp = () => {
               />
             </Form.Group>
             <Form.Group as={Col} md="3" controlId="validationFormik04">
-              <Form.Label>State</Form.Label>
+              <Form.Label>Telefono</Form.Label>
               <Form.Control
-                type="text"
-                placeholder="State"
+                type="number"
                 name="telefono"
                 value={formik.values.telefono}
                 onChange={formik.handleChange}
               />
-              <Form.Control.Feedback type="invalid">
-              </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="3" controlId="validationFormik05">
-              <Form.Label>Zip</Form.Label>
+              </Row>
+            <Row className='mb-3'>          
+            <Form.Group as={Col} md="6" controlId="validationFormik05">
+              <Form.Label>e-mail</Form.Label>
               <Form.Control
-                type="text"
-                placeholder="Zip"
+                type="email"
                 name="email"
                 value={formik.values.email}
                 onChange={formik.handleChange}
               />
-
-              <Form.Control.Feedback type="invalid">
-              </Form.Control.Feedback>
-            </Form.Group>
-          </Row>
-          <Form.Group className="mb-3">
-            <Form.Check
-              required
-              name="password"
-              label="Agree to terms and conditions"
-              onChange={formik.handleChange}
-            />
+              </Form.Group>
+              <Form.Group as={Col} md="6" controlId="validationFormik05">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                name="password"
+                value={formik.values.password}
+                onChange={formik.handleChange}
+              />
           </Form.Group>
-          <Button type="submit">Submit form</Button>
+          </Row>
+          <Button variant="success" type="submit" style={{alingItem: "center"}}>Registrarse</Button>
         </Form>
-      </Formulario>
+        </Formulario>
     </div>
   )
 }

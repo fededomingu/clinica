@@ -10,10 +10,8 @@ export const Title = styled.h1`
 
 
 export const Formulario = styled.div`
-    display: flex;
-    background-color: darkcyan;
-    width: 35em;
-    height: max-content;
-    align-items: center;
-    
+    background-color: #F0572D;
+    align-content: center;
+    margin-left: 12.5%;
+    width: 75%;
 `;
