@@ -7,9 +7,8 @@ import styled from 'styled-components';
 function Header () {
 
   const Menu = styled.nav`
-    display: flex;
-    align-items: flex-end;
-    border: 0.5em;
+      align-items: flex-end;
+      border: 0.5em;
   `
   return (
       

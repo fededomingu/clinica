@@ -10,7 +10,7 @@ export const Title = styled.h1`
 
 
 export const Formulario = styled.div`
-    display: flexbox;
+    display: flex;
     background-color: darkcyan;
     width: 35em;
     height: max-content;
