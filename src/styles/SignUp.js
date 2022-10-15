@@ -7,11 +7,9 @@ export const Title = styled.h1`
     text-align: center;
     `;
 
-
-
 export const Formulario = styled.div`
     background-color: #F0572D;
-    align-content: center;
+    justify-content: space-between;
     margin-left: 12.5%;
     width: 75%;
 `;

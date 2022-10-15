@@ -63,7 +63,7 @@ const SignUp = () => {
           REGISTRO
         </Title>
         <Formulario>
-        <Form noValidate onSubmit={formik.handleSubmit}>
+        <Form onSubmit={formik.handleSubmit}>
           <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationFormik01">
               <Form.Label>Nombre</Form.Label>
